@@ -9,6 +9,8 @@
     <!--Meta Keywords and Description-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 
+    <!--Favicon-->
+    <link rel="shortcut icon" href="~/images/favicon.ico" title="Favicon" />
     <!-- Main CSS Files -->
     <link rel="stylesheet" href="~/css/style.css">
 
@@ -17,7 +19,6 @@
 
     <!--Icon Fonts - Font Awesome Icons-->
     <link href="~/css/font-awesome.min.css" rel="stylesheet" />
-
     <!-- Animate CSS-->
     <link href="~/css/animate.css" rel="stylesheet" type="text/css">
 
@@ -104,8 +105,8 @@
                 </div>
 
                 <!--Call to Action-->
-                <a href="#about" class="button">Click Here to Learn More!</a>
-                <a href="#" class="button">Click Here to look at Tutoring Details</a>
+                    <a href="@Url.Action("Index", "Home")#about" class="button">Click Here to Learn More!</a>
+                    <a href=" @Url.Action("Tutoring", "Home")" class="button">Click Here to look at Tutoring Details</a>
                 <!--End Call to Action-->
 
             </div>
@@ -123,7 +124,7 @@
     <footer id="landing-footer" class="clearfix">
         <div class="row clearfix">
 
-            <p id="copyright" class="col-2">Created by PJ Phethean</p>
+                <p id="copyright" class="col-2">Created by &copy; PJ Phethean 2024</p>
 
             <!--Social Icons in Footer-->
             <ul class="col-2 social-icons">
@@ -143,8 +144,8 @@
     </footer>
 </div>
     <!--End of Footer-->
-
     <!-- Include JavaScript resources -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/jquery.1.8.3.min.js"></script>
     <script src="~/js/wow.min.js"></script>
     <script src="~/js/featherlight.min.js"></script>

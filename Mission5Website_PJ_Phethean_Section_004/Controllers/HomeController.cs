@@ -18,10 +18,11 @@ namespace Mission5Website_PJ_Phethean_Section_004.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Tutoring()
         {
             return View();
         }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
