@@ -1,27 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Tutoring Details";
 }
-@section scripts {
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#calculateBtn').click(function () {
-                var hours = parseFloat($('#hours').val());
-
-                // Validate input
-                if (isNaN(hours) || hours <= 0) {
-                    alert('Please enter a valid number of hours.');
-                    return;
-                }
-
-                var hourlyRate = parseFloat($('#hourlyRate').val().replace('$', ''));
-                var total = hours * hourlyRate;
-
-                $('#total').val('$' + total.toFixed(2));
-            });
-        });
-    </script>
-}
 
 <!--Main Content Area-->
 <main id="content">
